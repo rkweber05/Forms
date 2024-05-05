@@ -1,0 +1,88 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    background-color: rgb(22, 22, 22);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    color: white;
+    font-family: sans-serif;
+}
+
+form {
+    background-color: rgb(65, 65, 65);
+    width: 480px;
+}
+
+fieldset {
+    border: none;
+    padding: 20px;
+}
+
+label, input {
+    display: flex;
+    align-items: center;
+    padding: 20px 0;
+    border: none;
+    outline: none;
+    width: 100%;
+    color: white;
+}
+
+label {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+input {
+    padding-left: 12px;
+    font-size: 18px;
+    background-color: #3d3d3d;
+    border-bottom: 2px solid whitesmoke;
+}
+
+.title {
+    text-align: center;
+    font-size: 26px;
+    font-weight: bold;
+    padding: 20px 0 20px;
+}
+
+textarea {
+    resize: none;
+    width: 100%;
+    background-color: #3d3d3d;
+    outline: none;
+    border: none;
+    color: white;
+    padding: 15px;
+    font-size: 18px;
+    border-bottom: 2px solid whitesmoke;
+}
+
+.btn {
+    width: fit-content;
+    margin-left: 76%;
+    padding: 20px 25px;
+    margin-top: 25px;
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    background-color: #3d3d3d;
+    border: none;
+    outline: none;
+}
+
+input:invalid:focus, textarea:invalid:focus {
+    border-bottom: 2px solid red;
+}
+
+input:valid:focus, textarea:valid:focus {
+    border-bottom: 2px solid green;
+}
+
